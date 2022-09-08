@@ -395,22 +395,22 @@
             <form>
                 <label class="modal-form">
                     Ім'я
-                    <input type="text" name="username" class="input-block"/>
+                    <input type="text" name="user-name" class="input-block" required pattern="[a-zA-Zа-яА-ЯіІїЇ']{2}+"/>
                 </label>
                 <label class="modal-form">
                     Телефон
-                    <input type="tel" name="tel" class="input-block"/>
+                    <input type="tel" name="user-tel" class="input-block" required/>
                 </label>
                 <label class="modal-form">
                     Пошта
-                    <input type="email" name="email" class="input-block" />
+                    <input type="email" name="user-email" class="input-block" required />
                 </label>
                 <label class="modal-form">
                     Коментар
-                    <textarea name="comment" rows="5" placeholder="Введіть текст" resize: none class="input-block text-area"></textarea>
+                    <textarea type="text" name="user-comment" placeholder="Введіть текст" resize: none class="input-block text-area"></textarea>
                 </label>
                 <label class="modal-check">
-                    <input type="checkbox" name="agree" />
+                    <input type="checkbox" name="user-policy" required />
                     Погоджуюся з розсилкою та приймаю <a href="#" class="terms">Умови договору</a> 
                 </label>
                 <button type="submit" class="modal-submit-button">Відправити</button>

@@ -510,7 +510,7 @@ a {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--third-color);
     padding: 15px 16px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -518,6 +518,9 @@ a {
     border-radius: 4px;
     width: 358px;
     height: 50px;
+}
+.footer-form::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .button-footer {
@@ -679,7 +682,7 @@ a {
     transform: translateY(0);
 }
 
-/* Модвльне вікно */
+/* Модальне вікно */
 .backdrop {
     position: fixed;
     left: 0;
@@ -781,6 +784,8 @@ a {
 
 .text-area {
     resize: none;
+    width: 100%;
+    height: 120px;
 }
 
 .modal-check {
@@ -810,7 +815,6 @@ a {
 
     padding: 10px 52px;
     margin-top: 30px;
-    display: block;
 
     transition: background-color var(--transition-duration-function);
 
