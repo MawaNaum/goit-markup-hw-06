@@ -867,12 +867,12 @@ a {
     position: absolute;
     width: 16px;
     height: 15px;
-    background-image: url(/images/svgs/checkbox.svg);
+    background-image: url(../images/svgs/checkbox.svg);
     margin-left: -23px;
     margin-top: -7px;
 }
 .modal-checkbox:checked + .own-checkbox {
-    background-image: url(/images/svgs/checkbox-done.svg);
+    background-image: url(../images/svgs/checkbox-done.svg);
 }
 
 .modal-checkbox:focus + .own-checkbox {
