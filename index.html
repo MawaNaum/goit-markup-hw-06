@@ -384,7 +384,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" class="modal-close-button" data-modal-close>
                 <svg class="modal-close-icon" width="18px" height="18px">
@@ -424,10 +424,18 @@
                     <span class="modal-text">Коментар</span>
                     <textarea type="text" name="user-comment" placeholder="Введіть текст" resize: none class="modal-comment"></textarea>
                 </label>
+
+
                 <label class="modal-check">
                     <input type="checkbox" class="modal-checkbox" name="user-policy" required />
-                    <span class="own-checkbox"></span>Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="terms">Умови договору</a> 
+                    <span class="own-checkbox">
+                        <svg class="checkbox-icon" width="16px" height="15px">
+                            <use href="./images/symbol-defs (1).svg#icon-check"></use>
+                        </svg>
+                    </span>Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="terms">Умови договору</a> 
                 </label>
+
+
                 <button type="submit" class="modal-submit-button">Відправити</button>
             </form> 
         </div>
